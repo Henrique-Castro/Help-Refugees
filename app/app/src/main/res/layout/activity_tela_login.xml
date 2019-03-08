@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_fundo_login"
+    tools:context=".view.TelaLogin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#c3000000">
+
+        <EditText
+            android:id="@+id/txtSenha"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_below="@+id/labelSenha"
+            android:layout_centerHorizontal="true"
+            android:background="#c1675e5e"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/labelSenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnCadastrar"
+            android:layout_alignStart="@+id/btnCadastrar"
+            android:layout_below="@+id/txtLogin"
+            android:text="Senha"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:typeface="monospace"
+            app:fontFamily="sans-serif-smallcaps" />
+
+        <TextView
+            android:id="@+id/labelLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnCadastrar"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/btnCadastrar"
+            android:layout_marginTop="110dp"
+            android:text="Email"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:typeface="monospace"
+            app:fontFamily="sans-serif-smallcaps" />
+
+        <EditText
+            android:id="@+id/txtLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_below="@+id/labelLogin"
+            android:layout_centerHorizontal="true"
+            android:background="#c1675e5e"
+            android:ems="10"
+            android:inputType="text"
+            android:theme="@android:style/Animation"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btnEntrar"
+            android:layout_width="223dp"
+            android:layout_height="57dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="212dp"
+            android:background="#dc143c"
+
+            android:text="Entrar"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:context=".view.Main2Activity" />
+
+        <Button
+            android:id="@+id/btnCadastrar"
+            android:layout_width="223dp"
+            android:layout_height="57dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="135dp"
+            android:background="#dc143c"
+            android:text="Registrar"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".view.TelaPerfil"
+    tools:showIn="@layout/activity_tela_perfil">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f0143c">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="137dp"
+            android:background="#37000000">
+
+            <EditText
+                android:id="@+id/txtDescricao"
+                android:layout_width="235dp"
+                android:layout_height="101dp"
+                android:layout_alignBottom="@+id/imgPerfil"
+                android:layout_alignStart="@+id/lblDescricao"
+                android:layout_alignLeft="@+id/lblDescricao"
+                android:ems="10"
+                android:hint="Escreva aqui uma frase, por exemplo o que te motivou a ser um voluntário!"
+                android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textMultiLine|textImeMultiLine"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/imgPerfil"
+                android:layout_width="119dp"
+                android:layout_height="124dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="14dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="13dp"
+                app:srcCompat="@mipmap/ic_perfil_foto_round" />
+
+            <TextView
+                android:id="@+id/lblDescricao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/imgPerfil"
+                android:layout_marginStart="141dp"
+                android:layout_marginLeft="0dp"
+                android:text="Descrição:"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btnEditarPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/imgPerfil"
+                android:background="@android:drawable/ic_menu_edit"
+                android:clickable="true"
+                app:srcCompat="@android:drawable/ic_menu_edit" />
+
+            <Button
+                android:id="@+id/btnSalvar"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="Salvar"
+                android:textColor="@android:color/background_light"
+                android:textSize="8sp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnVoltar"
+                android:layout_width="49dp"
+                android:layout_height="38dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@mipmap/ic_seta_voltar" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="145dp"
+            android:paddingLeft="60dp"
+            android:paddingTop="10dp"
+            android:text="Mobilizações propostas:"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="391dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="0dp"
+            android:scrollbars="vertical"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

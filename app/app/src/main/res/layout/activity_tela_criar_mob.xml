@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0143c"
+    tools:context=".view.TelaCriarMob">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#37000000"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="288dp"
+            android:layout_height="149dp"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+
+        <EditText
+            android:id="@+id/txtNomeMob"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Nome da mobilização"
+            android:inputType="text"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtLocal"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:ems="10"
+            android:hint="Local"
+            android:inputType="text"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtDescricaoMob"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:ems="10"
+            android:hint="Descrição"
+            android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textMultiLine|textImeMultiLine|textLongMessage"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtData"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Data"
+            android:inputType="date"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnVoltar"
+                android:layout_width="255dp"
+                android:layout_height="62dp"
+                android:layout_weight="1"
+                android:background="#1c1b1b"
+                android:text="Cancelar"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="#f0143c"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="monospace" />
+
+            <Button
+                android:id="@+id/btnCriar"
+                android:layout_width="255dp"
+                android:layout_height="62dp"
+                android:layout_weight="1"
+                android:background="@android:color/background_light"
+                android:fontFamily="monospace"
+                android:text="Criar"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="#f0143c"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:theme="?android:attr/alertDialogStyle"
+                android:typeface="monospace" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
